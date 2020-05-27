@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 - [API Endpoints - DELETE](#DELETE)
 
 ## API Endpoints
-Base URL: https://infohub101.herokuapp.com
+Base URL: https://webnotesapi.herokuapp.com/
 |Method|Route                           |Description              |
 |------|--------------------------------|-------------------------|
 |GET   |/api/notes                      |GET All Notes            |
