@@ -1,0 +1,33 @@
+{
+  "name": "back-end-project-week",
+  "version": "1.0.0",
+  "description": "The following is a list of items that you will need to accomplish to demonstrate mastery over your 4th Lambda School Unit.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichVI/back-end-project-week.git"
+  },
+  "keywords": [],
+  "author": "Richard Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichVI/back-end-project-week/issues"
+  },
+  "homepage": "https://github.com/RichVI/back-end-project-week#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
