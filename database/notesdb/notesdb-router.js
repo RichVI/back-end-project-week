@@ -44,7 +44,7 @@ router.put('/:id', (req, res) =>{
  
     API.findById(req.params.id).then(api =>{
         if(api){
-            API.update(changes, req.params)
+            API.update(changes, req.params.id)
             .then(updated =>{
                 res.status(201).json({success: 'Notes updated', id: api.id, ...changes})
             })
@@ -55,6 +55,38 @@ router.put('/:id', (req, res) =>{
         res.status(500).json({ message: 'Failed to update notes' });
       });
 })
+
+// router.put('/:id', (req,res) =>{
+//     const {id} = req.params;
+//     const changes = req.body;
+ 
+//     API.findById(id).then(post =>{
+//         if(post){
+//             API.update(changes, id)
+//             .then(updated =>{
+//                 res.status(201).json({success: 'updated', id: api.id, ...changes})
+//             })
+//         }else{
+//             res.status(401).json({message: `Could Not Find Post With ID: ${id}`})
+//         }
+//     }).catch(err => {
+//         res.status(500).json({ message: 'Failed To Update Post' });
+//       });
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //DELETE API
 router.delete('/:id', (req, res) =>{
